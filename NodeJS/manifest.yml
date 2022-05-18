@@ -1,8 +1,12 @@
 ---
 applications:
 - name: xdays02
+  memory: 100MB
   buildpacks:
     - nodejs_buildpack
-  memory: 50MB
+  command: node server
+  disk_quota: 150MB
+  instances: 2
+  timeout: 180
   services:
   - xdays-logs
