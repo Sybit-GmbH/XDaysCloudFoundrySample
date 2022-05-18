@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000
 
 app.get('/', async (req, res) => {
   const CF_INSTANCE = process.env.CF_INSTANCE_INDEX || 'N/A'
-  req.logger.info("Fetching random cat image");
+  req.logger.info("Fetching random cat image on Instance: " + CF_INSTANCE)");
   const host = "https://cataas.com"
   
   const catRes = await fetch(`${host}/cat?json=true`)
