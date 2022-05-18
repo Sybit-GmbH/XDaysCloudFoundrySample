@@ -15,7 +15,7 @@ app.get('/', async (req, res) => {
   
   const catRes = await fetch(`${host}/cat?json=true`)
   const cat = await catRes.json()
-  req.logger.info(cat);
+  req.logger.info(cat.url, cat.tags, cat.id);
 
   const imgRes = await fetch(`${host}${cat.url}`)
   const img = await imgRes.buffer()
