@@ -8,6 +8,8 @@ sybit-dev2
 
 ## Static File Buildpack
 
+cd into StaticFile folder and run:
+
 ```bash
 cf push xdaysXX
 ```
