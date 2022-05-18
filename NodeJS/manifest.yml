@@ -1,13 +1,13 @@
 ---
 applications:
-- name: xdays02
-  route: xdays02
-  memory: 100MB
-  buildpacks:
-    - nodejs_buildpack
-  command: node server
-  disk_quota: 150MB
-  instances: 2
-  timeout: 180
-  services:
-  - xdays-logs
+  - name: xdays02
+    route: xdays02
+    memory: 100MB
+    buildpacks:
+      - nodejs_buildpack
+    command: node server
+    disk_quota: 150MB
+    instances: 2
+    timeout: 180
+    services:
+      - xdays-logs
