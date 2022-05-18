@@ -1,0 +1,8 @@
+---
+applications:
+- name: xdays02
+  buildpacks:
+    - nodejs_buildpack
+  memory: 50MB
+  services:
+  - xdays-logs
