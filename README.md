@@ -37,3 +37,21 @@ cf push
 ```
 
 ## Docker Buildpack
+
+### Build Docker Image
+
+```bash
+docker build -t marluz/x_days_cloud_foundry_sample .
+```
+
+### Run Docker local
+
+```bash
+docker run -d -p3000:3000 marluz/x_days_cloud_foundry_sample:latest
+```
+
+### Push Docker Image
+
+```bash
+docker push marluz/x_days_cloud_foundry_sample:latest
+```

@@ -1,0 +1,10 @@
+---
+applications:
+- name: xdays03
+  memory: 100MB
+  docker:
+    image: marluz/x_days_cloud_foundry_sample:latest
+  disk_quota: 300MB
+  instances: 2
+  services:
+  - xdays-logs
