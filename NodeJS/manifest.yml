@@ -1,7 +1,8 @@
 ---
 applications:
   - name: xdays02
-    route: xdays02
+    routes: 
+    - route: xdays02
     memory: 100MB
     buildpacks:
       - nodejs_buildpack
