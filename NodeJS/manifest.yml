@@ -2,12 +2,12 @@
 applications:
   - name: xdays02
     routes: 
-    - route: xdays02
+    - route: xdays02.cfapps.eu10.hana.ondemand.com
     memory: 100MB
     buildpacks:
       - nodejs_buildpack
     command: node server
-    disk_quota: 150MB
+    disk_quota: 200MB
     instances: 2
     timeout: 180
     services:
