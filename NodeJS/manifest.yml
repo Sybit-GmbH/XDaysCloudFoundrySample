@@ -9,6 +9,5 @@ applications:
     command: node server
     disk_quota: 200MB
     instances: 2
-    timeout: 180
     services:
       - xdays-logs
